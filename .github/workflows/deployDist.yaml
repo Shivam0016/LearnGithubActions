@@ -5,8 +5,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name : Get Code
-        run: |
-          echo "clonining repo.."
-          echo "${{toJson(github)}}"
-          git clone https://github.com//github.com/${{github.repository}}.git
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+#      - name : Get Code
+#        run: |
+#          echo "clonining repo.."
+#          echo "${{toJson(github)}}"
+#          git clone https://github.com//github.com/${{github.repository}}.git
